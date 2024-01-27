@@ -1,0 +1,19 @@
+# Ignore build artifacts and executables
+*.[oO]
+*.[oO][uU][tT]
+*.[eE][xX][eE]
+*.[sS][oO]
+*.[aA]
+*.[dD][lL][lL]
+
+# Ignore generated files
+Makefile
+CMakeLists.txt.user
+CMakeFiles/
+
+# Ignore compiled binaries
+.build/
+.vscode/
+bin/
+build/
+lib/
