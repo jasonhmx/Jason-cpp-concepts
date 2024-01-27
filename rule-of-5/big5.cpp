@@ -26,14 +26,14 @@ public:
         return *this;
     }
 
-    A(A &&other)
+    A(A &&other) noexcept
     {
         cout << "Move constructor"
              << "\n";
         field = other.field; // in this case the field doesn't need to be moved since it's an int
     }
 
-    A &operator=(A &&other)
+    A &operator=(A &&other) noexcept // noexcept is important so that std containers/algos can use them
     {
         cout << "Move assignment"
              << "\n";
